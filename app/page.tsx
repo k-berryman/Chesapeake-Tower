@@ -4,6 +4,7 @@ import ServicesGrid from './components/ServicesGrid'
 import WhyChooseUs from './components/WhyChooseUs'
 import ProjectGallery from './components/ProjectGallery'
 import CareerBanner from './components/CareerBanner'
+import Memorial from './components/Memorial'
 import Footer from './components/Footer'
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <WhyChooseUs />
       <ProjectGallery />
       <CareerBanner />
+      <Memorial />
       <Footer />
     </main>
   )
