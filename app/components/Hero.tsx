@@ -16,7 +16,7 @@ export default function Hero() {
       {/* Background — mobile (portrait) */}
       <div
         className="absolute inset-0 z-0 bg-cover bg-center md:hidden"
-        style={{ backgroundImage: "url('/images/hero-bg-mobile.jpg')" }}
+        style={{ backgroundImage: "url('/images/hero-bg-mobile.png')" }}
         role="presentation"
       />
 
