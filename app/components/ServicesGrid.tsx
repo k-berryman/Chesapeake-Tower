@@ -20,7 +20,7 @@ const services: Service[] = [
   {
     title: 'TOWER MAINTENANCE',
     description: 'Preventive maintenance, repairs, lighting systems, and structural upgrades.',
-    image: '/images/maintenance.jpg',
+    image: '/images/maintenance.png',
     icon: <Wrench className="w-6 h-6" />,
   },
   {

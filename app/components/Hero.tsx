@@ -20,8 +20,8 @@ export default function Hero() {
         role="presentation"
       />
 
-      {/* Main Content */}
-      <div className="relative z-20 flex flex-col items-center justify-end h-full px-6 pb-20 md:pb-72 text-center">
+      {/* Main Content — moved UP (changed justify-end to justify-center) */}
+      <div className="relative z-20 flex flex-col items-center justify-center h-full px-6 pt-40 pb-20 md:pt-52 md:pb-64 text-center">
 
         {/* Tagline */}
         <h2 className="font-display font-bold text-white text-3xl md:text-4xl lg:text-5xl tracking-widest leading-none mb-3">
@@ -56,12 +56,16 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+      {/* Scroll Indicator — NOW CLICKABLE */}
+      <a
+        href="#services"
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 cursor-pointer hover:opacity-70 transition-opacity duration-200"
+        aria-label="Scroll to Services section"
+      >
         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5" aria-hidden="true">
           <path d="M12 5v14M5 12l7 7 7-7" />
         </svg>
-      </div>
+      </a>
     </section>
   );
 }
