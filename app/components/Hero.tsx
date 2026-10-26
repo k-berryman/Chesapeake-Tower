@@ -3,7 +3,7 @@
 export default function Hero() {
   return (
     <section
-      className="relative h-screen w-full overflow-hidden bg-black"
+      className="relative h-[100dvh] w-full overflow-hidden bg-black"
       aria-label="Chesapeake Tower Solutions - Hero Section"
     >
       {/* Background — desktop (landscape) */}
@@ -20,7 +20,7 @@ export default function Hero() {
         role="presentation"
       />
 
-      {/* Main Content — moved UP (changed justify-end to justify-center) */}
+      {/* Main Content */}
       <div className="relative z-20 flex flex-col items-center justify-center h-full px-6 pt-40 pb-20 md:pt-52 md:pb-64 text-center">
 
         {/* Tagline */}
@@ -56,10 +56,10 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll Indicator — NOW CLICKABLE */}
+      {/* Scroll Indicator — clickable, lifted above mobile browser bar */}
       <a
         href="#services"
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 cursor-pointer hover:opacity-70 transition-opacity duration-200"
+        className="absolute bottom-24 md:bottom-10 left-1/2 transform -translate-x-1/2 z-20 cursor-pointer hover:opacity-70 transition-opacity duration-200"
         aria-label="Scroll to Services section"
       >
         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5" aria-hidden="true">

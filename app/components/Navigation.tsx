@@ -62,13 +62,13 @@ export default function Navigation() {
       {/* Mobile dropdown */}
       {open && (
         <div className="lg:hidden bg-black/95 border-t border-white/10">
-          <div className="flex flex-col px-6 py-2">
+          <div className="flex flex-col items-center px-6 py-2">
             {links.map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
                 onClick={() => setOpen(false)}
-                className="cursor-pointer text-white/90 hover:text-white font-display font-bold text-xl uppercase tracking-widest py-3 border-b border-white/5 last:border-0"
+                className="cursor-pointer text-center text-white/90 hover:text-white font-display font-bold text-xl uppercase tracking-widest py-3 border-b border-white/5 last:border-0 w-full"
               >
                 {item}
               </a>
