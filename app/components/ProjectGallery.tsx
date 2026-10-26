@@ -1,9 +1,9 @@
 const projects = [
-  { image: '/images/projects-1.jpeg', label: 'Tower Construction' },
+  { image: '/images/projects-1.png', label: 'Tower Construction' },
   { image: '/images/projects-2.jpeg', label: 'Antenna Installation' },
   { image: '/images/projects-3.png', label: 'Multi-Site Complex' },
   { image: '/images/projects-4.jpeg', label: 'Microwave & Satellite Systems' },
-  { image: '/images/projects-5.jpeg', label: 'Wind Turbine Maintenance' },
+  { image: '/images/projects-5.png', label: 'Wind Turbine Maintenance' },
   { image: '/images/projects-6.jpeg', label: 'Rapid Response Crews' },
 ];
 
