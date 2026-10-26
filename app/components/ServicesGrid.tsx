@@ -52,63 +52,68 @@ const services: Service[] = [
 
 export default function ServicesGrid() {
   return (
-    <section id="services" className="bg-black py-12 md:py-20 px-6">
+    <section id="services" className="bg-black py-20 px-6 mt-10">
       <div className="max-w-7xl mx-auto">
 
         {/* Section Header */}
-        <div className="text-center mb-10 md:mb-14">
-          <p className="text-red-500 font-display font-bold text-base uppercase tracking-widest mb-2">
-            What We Do
-          </p>
-          <h2 className="font-display font-bold text-white text-3xl md:text-5xl uppercase tracking-widest">
-            Complete Tower Solutions
-          </h2>
-        </div>
+        <p className="text-red-500 font-display font-bold text-lg uppercase tracking-widest text-center mb-3">
+          WHAT WE DO
+        </p>
+        <h2 className="font-display font-bold text-white text-3xl md:text-5xl uppercase tracking-widest text-center mb-14">
+          COMPLETE TOWER SOLUTIONS
+        </h2>
 
-        {/* Cards Grid */}
+        {/* Cards: 3 per row */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service) => (
-            <div
+            <article
               key={service.title}
-              className="group bg-neutral-900 border border-white/10 rounded overflow-hidden hover:border-red-600/50 transition-colors duration-300"
+              className="border border-white/20 bg-neutral-950 flex flex-col transition-transform duration-200 hover:scale-105 will-change-transform"
             >
-              <div className="relative h-48 overflow-hidden">
+              {/* Card Image with Icon Overlay */}
+              <div className="h-56 overflow-hidden relative">
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  loading="lazy"
+                  className="w-full h-full object-cover"
                 />
+                {/* Red Icon Badge */}
+                {service.icon && (
+                  <div className="absolute bottom-4 left-4 bg-red-600 rounded-full p-2.5 shadow-lg">
+                    <div className="text-black">
+                      {service.icon}
+                    </div>
+                  </div>
+                )}
               </div>
 
-              <div className="p-6">
-                <div className="flex items-center gap-3 mb-3">
-                  <span className="flex items-center justify-center w-10 h-10 rounded bg-red-600 text-white flex-shrink-0">
-                    {service.icon}
-                  </span>
-                  <h3 className="font-display font-bold text-white text-xl uppercase tracking-wider">
-                    {service.title}
-                  </h3>
-                </div>
+              {/* Card Body */}
+              <div className="p-6 flex-1">
+                <h3 className="font-display font-bold text-white text-xl uppercase tracking-wider mb-3">
+                  {service.title}
+                </h3>
 
                 {service.bullets ? (
-                  <ul className="grid grid-cols-2 gap-x-4 gap-y-1">
+                <ul className="grid grid-cols-2 gap-x-4 gap-y-1.5">
                     {service.bullets.map((bullet) => (
-                      <li key={bullet} className="text-white/70 font-body text-sm">
+                    <li
+                        key={bullet}
+                        className="text-white/70 text-sm font-body flex items-center"
+                    >
+                        <span className="w-1.5 h-1.5 bg-red-600 rounded-full mr-2.5" aria-hidden="true"></span>
                         {bullet}
-                      </li>
+                    </li>
                     ))}
-                  </ul>
+                </ul>
                 ) : (
-                  <p className="text-white/70 font-body text-sm leading-relaxed">
+                  <p className="text-white/70 text-sm leading-relaxed font-body">
                     {service.description}
                   </p>
                 )}
               </div>
-            </div>
+            </article>
           ))}
         </div>
-
       </div>
     </section>
   );
