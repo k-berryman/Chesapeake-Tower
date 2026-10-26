@@ -19,6 +19,7 @@ const aboutPhotos = [
   { image: '/images/About-1.png', alt: 'Chesapeake Tower Solutions field work' },
   { image: '/images/About-2.png', alt: 'CTS crew on site' },
   { image: '/images/About-3.jpeg', alt: 'Tower infrastructure project' },
+  { image: '/images/About-4.jpeg', alt: 'CTS tower project' },
 ];
 
 export default function About() {
@@ -59,7 +60,7 @@ export default function About() {
         </div>
 
         {/* Photo Row */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-20">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-20">
           {aboutPhotos.map((photo) => (
             <figure key={photo.image} className="border border-white/10 overflow-hidden">
               <img
