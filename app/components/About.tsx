@@ -59,19 +59,39 @@ export default function About() {
           ))}
         </div>
 
-        {/* Photo Strip — horizontal scroll */}
-        <div className="flex gap-4 overflow-x-auto pb-4 mb-20 snap-x scroll-px-6 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-          {aboutPhotos.map((photo) => (
-            <figure key={photo.image} className="snap-start shrink-0 border border-white/10 overflow-hidden">
+        {/* Photos 1 & 2 — landscape pair */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+          {aboutPhotos.slice(0, 2).map((photo) => (
+            <figure key={photo.image} className="border border-white/10 overflow-hidden">
               <img
                 src={photo.image}
                 alt={photo.alt}
-                className="w-72 md:w-96 h-48 md:h-64 object-cover"
+                className="w-full h-56 sm:h-64 object-cover"
                 loading="lazy"
               />
             </figure>
           ))}
         </div>
+
+        {/* Photo 3 — portrait, own row */}
+        <figure className="mx-auto max-w-sm mb-4 border border-white/10 overflow-hidden">
+          <img
+            src={aboutPhotos[2].image}
+            alt={aboutPhotos[2].alt}
+            className="w-full aspect-[3/4] object-cover"
+            loading="lazy"
+          />
+        </figure>
+
+        {/* Photo 4 — portrait, own row */}
+        <figure className="mx-auto max-w-sm mb-20 border border-white/10 overflow-hidden">
+          <img
+            src={aboutPhotos[3].image}
+            alt={aboutPhotos[3].alt}
+            className="w-full aspect-[3/4] object-cover"
+            loading="lazy"
+          />
+        </figure>
 
         {/* Memorial */}
         <div className="max-w-3xl mx-auto text-center border-t border-white/10 pt-16">

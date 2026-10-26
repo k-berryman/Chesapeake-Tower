@@ -24,7 +24,7 @@ export default function Hero() {
       <div className="relative z-20 flex flex-col items-center justify-center h-full px-6 pb-32 md:pb-40 text-center">
 
         {/* Tagline — pushed down substantially */}
-        <h2 className="font-display font-bold text-white text-3xl md:text-4xl lg:text-5xl tracking-widest leading-none mb-8 mt-52 md:mt-72">
+        <h2 className="font-display font-bold text-white text-3xl md:text-4xl lg:text-5xl tracking-widest leading-none mb-8 mt-48 md:mt-64">
           ELEVATING COMMUNICATIONS.
           <span className="block">DELIVERING EXCELLENCE.</span>
         </h2>
