@@ -1,10 +1,10 @@
 const projects = [
-  { image: '/images/old-website-pic-6.jpg', label: 'Tower Construction' },
-  { image: '/images/old-website-pic-2.jpg', label: 'Antenna Installation' },
-  { image: '/images/old-website-pic-9.jpg', label: 'Multi-Site Complex' },
-  { image: '/images/old-website-pic-8.jpg', label: 'Microwave & Satellite Systems' },
-  { image: '/images/old-website-pic-1.jpg', label: 'Wind Turbine Maintenance' },
-  { image: '/images/old-website-pic-10.jpg', label: 'Rapid Response Crews' },
+  { image: '/images/projects-1.jpeg', label: 'Tower Construction' },
+  { image: '/images/projects-2.jpeg', label: 'Antenna Installation' },
+  { image: '/images/projects-3.png', label: 'Multi-Site Complex' },
+  { image: '/images/projects-4.jpeg', label: 'Microwave & Satellite Systems' },
+  { image: '/images/projects-5.jpeg', label: 'Wind Turbine Maintenance' },
+  { image: '/images/projects-6.jpeg', label: 'Rapid Response Crews' },
 ];
 
 export default function ProjectGallery() {
