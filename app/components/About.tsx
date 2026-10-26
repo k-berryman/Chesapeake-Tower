@@ -59,14 +59,14 @@ export default function About() {
           ))}
         </div>
 
-        {/* Photo Row */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-20">
+        {/* Photo Strip — horizontal scroll */}
+        <div className="flex gap-4 overflow-x-auto pb-4 mb-20 snap-x scroll-px-6 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {aboutPhotos.map((photo) => (
-            <figure key={photo.image} className="border border-white/10 overflow-hidden">
+            <figure key={photo.image} className="snap-start shrink-0 border border-white/10 overflow-hidden">
               <img
                 src={photo.image}
                 alt={photo.alt}
-                className="w-full h-48 sm:h-56 object-cover"
+                className="w-72 md:w-96 h-48 md:h-64 object-cover"
                 loading="lazy"
               />
             </figure>

@@ -21,23 +21,19 @@ export default function Hero() {
       />
 
       {/* Main Content */}
-      <div className="relative z-20 flex flex-col items-center justify-center h-full px-6 pb-24 md:pb-32 text-center">
+      <div className="relative z-20 flex flex-col items-center justify-center h-full px-6 pb-32 md:pb-40 text-center">
 
-        {/* Tagline — nudged further down */}
-        <h2 className="font-display font-bold text-white text-3xl md:text-4xl lg:text-5xl tracking-widest leading-none mb-6 mt-14 md:mt-20">
+        {/* Tagline — pushed down substantially */}
+        <h2 className="font-display font-bold text-white text-3xl md:text-4xl lg:text-5xl tracking-widest leading-none mb-8 mt-52 md:mt-72">
           ELEVATING COMMUNICATIONS.
           <span className="block">DELIVERING EXCELLENCE.</span>
         </h2>
 
-        {/* Services List — Inspections joined to line 1 */}
-        <div className="mb-8 space-y-2">
-          <p className="font-display font-bold text-white text-lg md:text-2xl uppercase tracking-wider">
-            PROFESSIONAL TOWER CONSTRUCTION • MAINTENANCE • INSPECTIONS
-          </p>
-          <p className="font-display font-bold text-white text-lg md:text-2xl uppercase tracking-wider">
-            EMERGENCY RESPONSE
-          </p>
-        </div>
+        {/* Services List — single paragraph so all lines share identical spacing */}
+        <p className="font-display font-bold text-white text-lg md:text-2xl uppercase tracking-wider leading-relaxed mb-10 text-center">
+          PROFESSIONAL TOWER CONSTRUCTION • MAINTENANCE • INSPECTIONS •
+          <span className="block">EMERGENCY RESPONSE</span>
+        </p>
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-5 md:gap-7">
@@ -56,10 +52,10 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll Indicator — smaller on mobile, tucked near bottom, clear of buttons */}
+      {/* Scroll Indicator */}
       <a
         href="#services"
-        className="absolute bottom-6 md:bottom-8 left-1/2 transform -translate-x-1/2 z-20 cursor-pointer hover:opacity-70 transition-opacity duration-200"
+        className="absolute bottom-8 md:bottom-10 left-1/2 transform -translate-x-1/2 z-20 cursor-pointer hover:opacity-70 transition-opacity duration-200"
         aria-label="Scroll to Services section"
       >
         <svg className="w-8 h-8 md:w-12 md:h-12" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5" aria-hidden="true">
