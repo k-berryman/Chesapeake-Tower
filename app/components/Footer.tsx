@@ -59,13 +59,13 @@ export default function Footer() {
             alt="Chesapeake Tower Solutions"
             className="w-24 h-24 mx-auto mb-4 object-contain"
           />
-          <p className="text-white/50 font-body text-sm mb-2">
+          <p className="text-white/70 font-body text-lg md:text-xl font-semibold mb-2">
             Chesapeake Tower Solutions
           </p>
           <p className="text-white/30 font-body text-xs">
             Rope Access and Communication Solutions for The Bay and Beyond.
           </p>
-          <div className="mt-10 flex justify-center">
+          <div className="mt-16 flex justify-center">
             <a
               href="tel:+18035547891"
               className="inline-block bg-red-600 text-white font-body text-sm tracking-widest px-6 py-2 rounded-full border border-white/20"

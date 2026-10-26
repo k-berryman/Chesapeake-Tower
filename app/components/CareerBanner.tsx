@@ -22,8 +22,7 @@ export default function CareerBanner() {
           </h3>
           <p className="text-white/70 font-body leading-relaxed mb-6">
             {/* DAVE TO PROVIDE: position description goes here — replace this text. */}
-            DESCRIPTION_GOES_HERE
-          </p>
+            We're hiring a maintenance technician to support tower and antenna maintenance across the Chesapeake region. Responsibilities include lighting, steel, and equipment work at heights, troubleshooting, and site upkeep, with climb training provided for the right candidate. Competitive pay, per-diem travel work, and a crew that takes safety seriously.                  </p>
           <a
             href="#contact"
             className="inline-block bg-red-600 hover:bg-red-700 text-white font-display font-bold text-lg uppercase tracking-widest py-3 px-8 rounded transition-transform duration-200 hover:scale-105 origin-center will-change-transform"

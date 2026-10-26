@@ -30,13 +30,14 @@ export default function Hero() {
         </h2>
 
         {/* Services List — single paragraph so all lines share identical spacing */}
-        <p className="font-display font-bold text-white text-lg md:text-2xl uppercase tracking-wider leading-relaxed mb-10 text-center">
-          PROFESSIONAL TOWER CONSTRUCTION • MAINTENANCE • INSPECTIONS •
+        <p className="font-display font-bold text-white text-base sm:text-lg md:text-2xl uppercase tracking-wider leading-loose mb-10 text-center">
+          <span className="block">PROFESSIONAL TOWER CONSTRUCTION</span>
+          <span className="block">MAINTENANCE • INSPECTIONS</span>
           <span className="block">EMERGENCY RESPONSE</span>
         </p>
 
         {/* Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-5 md:gap-7">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-7">
           <a
             href="#contact"
             className="inline-block cursor-pointer bg-red-600 hover:bg-red-700 text-white font-display font-bold text-lg md:text-2xl uppercase tracking-widest py-3 px-8 rounded transition-transform duration-200 hover:scale-105 origin-center will-change-transform"

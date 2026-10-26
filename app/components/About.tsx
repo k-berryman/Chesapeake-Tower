@@ -89,7 +89,7 @@ export default function About() {
             <img
               src={aboutPhotos[3].image}
               alt={aboutPhotos[3].alt}
-              className="w-full aspect-[4/5] object-cover object-top"
+              className="w-full object-contain"
               loading="lazy"
             />
           </figure>
