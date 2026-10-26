@@ -11,7 +11,7 @@ export default function Footer() {
           Request a Quote
         </h2>
 
-        <p className="text-white/70 font-body mb-8">
+        <p className="text-white/70 font-body mb-2">
           Rope Access and Communication Solutions for The Bay and Beyond.
         </p>
 
@@ -57,7 +57,7 @@ export default function Footer() {
           <img
             src="/images/favicon.svg"
             alt="Chesapeake Tower Solutions"
-            className="w-16 h-16 mx-auto mb-4 object-contain"
+            className="w-24 h-24 mx-auto mb-4 object-contain"
           />
           <p className="text-white/50 font-body text-sm mb-2">
             Chesapeake Tower Solutions
@@ -65,8 +65,10 @@ export default function Footer() {
           <p className="text-white/30 font-body text-xs">
             Rope Access and Communication Solutions for The Bay and Beyond.
           </p>
+          <p className="text-center text-white/60 font-body text-sm tracking-widest pb-2">
+              <a href="tel:+18035547891" className="hover:text-white">803-554-7891</a>
+          </p>
         </div>
-
       </div>
     </section>
   );
