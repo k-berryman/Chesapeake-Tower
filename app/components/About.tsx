@@ -85,12 +85,12 @@ export default function About() {
 
         {/* Photo 4 — portrait, own row */}
         <figure className="mx-auto max-w-sm mb-20 border border-white/10 overflow-hidden">
-          <img
-            src={aboutPhotos[3].image}
-            alt={aboutPhotos[3].alt}
-            className="w-full aspect-[3/4] object-cover"
-            loading="lazy"
-          />
+            <img
+              src={aboutPhotos[3].image}
+              alt={aboutPhotos[3].alt}
+              className="w-full max-h-[60vh] object-contain"
+              loading="lazy"
+            />
         </figure>
 
         {/* Memorial */}

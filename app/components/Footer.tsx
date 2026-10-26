@@ -57,7 +57,7 @@ export default function Footer() {
           <img
             src="/images/favicon.svg"
             alt="Chesapeake Tower Solutions"
-            className="w-14 h-14 mx-auto mb-4 object-contain"
+            className="w-16 h-16 mx-auto mb-4 object-contain"
           />
           <p className="text-white/50 font-body text-sm mb-2">
             Chesapeake Tower Solutions
