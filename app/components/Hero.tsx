@@ -20,17 +20,17 @@ export default function Hero() {
         role="presentation"
       />
 
-      {/* Main Content */}
-      <div className="relative z-20 flex flex-col items-center justify-center h-full px-6 pt-40 pb-20 md:pt-52 md:pb-64 text-center">
+      {/* Main Content — tagline nudged down, more breathing room between elements */}
+      <div className="relative z-20 flex flex-col items-center justify-center h-full px-6 pt-48 pb-24 md:pt-60 md:pb-72 text-center">
 
         {/* Tagline */}
-        <h2 className="font-display font-bold text-white text-3xl md:text-4xl lg:text-5xl tracking-widest leading-none mb-3">
+        <h2 className="font-display font-bold text-white text-3xl md:text-4xl lg:text-5xl tracking-widest leading-none mb-6">
           ELEVATING COMMUNICATIONS.
           <span className="block">DELIVERING EXCELLENCE.</span>
         </h2>
 
         {/* Services List */}
-        <div className="mb-5 space-y-1">
+        <div className="mb-8 space-y-2">
           <p className="font-display font-bold text-white text-lg md:text-2xl uppercase tracking-wider">
             PROFESSIONAL TOWER CONSTRUCTION • MAINTENANCE
           </p>
@@ -40,7 +40,7 @@ export default function Hero() {
         </div>
 
         {/* Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-5 md:gap-7">
           <a
             href="#contact"
             className="inline-block cursor-pointer bg-red-600 hover:bg-red-700 text-white font-display font-bold text-lg md:text-2xl uppercase tracking-widest py-3 px-8 rounded transition-transform duration-200 hover:scale-105 origin-center will-change-transform"
@@ -56,10 +56,10 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll Indicator — clickable, lifted above mobile browser bar */}
+      {/* Scroll Indicator — nudge down slightly */}
       <a
         href="#services"
-        className="absolute bottom-24 md:bottom-10 left-1/2 transform -translate-x-1/2 z-20 cursor-pointer hover:opacity-70 transition-opacity duration-200"
+        className="absolute bottom-20 md:bottom-8 left-1/2 transform -translate-x-1/2 z-20 cursor-pointer hover:opacity-70 transition-opacity duration-200"
         aria-label="Scroll to Services section"
       >
         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5" aria-hidden="true">
