@@ -65,9 +65,14 @@ export default function Footer() {
           <p className="text-white/30 font-body text-xs">
             Rope Access and Communication Solutions for The Bay and Beyond.
           </p>
-          <p className="text-center text-white/60 font-body text-sm tracking-widest pb-2">
-              <a href="tel:+18035547891" className="hover:text-white">803-554-7891</a>
-          </p>
+          <div className="mt-10 flex justify-center">
+            <a
+              href="tel:+18035547891"
+              className="inline-block bg-red-600 text-white font-body text-sm tracking-widest px-6 py-2 rounded-full border border-white/20"
+            >
+              803-554-7891
+            </a>
+          </div>
         </div>
       </div>
     </section>

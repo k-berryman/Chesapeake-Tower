@@ -4,7 +4,7 @@ import { Menu, X } from 'lucide-react';
 
 export default function Navigation() {
   const [open, setOpen] = useState(false);
-  const links = ['Services', 'Safety', 'Projects', 'Careers', 'About'];
+  const links = ['Services', 'Safety', 'Projects', 'About', 'Careers'];
 
   return (
     <nav
