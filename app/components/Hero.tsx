@@ -20,22 +20,22 @@ export default function Hero() {
         role="presentation"
       />
 
-      {/* Main Content — tagline nudged down, more breathing room between elements */}
-      <div className="relative z-20 flex flex-col items-center justify-center h-full px-6 pt-48 pb-24 md:pt-60 md:pb-72 text-center">
+      {/* Main Content */}
+      <div className="relative z-20 flex flex-col items-center justify-center h-full px-6 pb-24 md:pb-32 text-center">
 
-        {/* Tagline */}
-        <h2 className="font-display font-bold text-white text-3xl md:text-4xl lg:text-5xl tracking-widest leading-none mb-6">
+        {/* Tagline — nudged further down */}
+        <h2 className="font-display font-bold text-white text-3xl md:text-4xl lg:text-5xl tracking-widest leading-none mb-6 mt-14 md:mt-20">
           ELEVATING COMMUNICATIONS.
           <span className="block">DELIVERING EXCELLENCE.</span>
         </h2>
 
-        {/* Services List */}
+        {/* Services List — Inspections joined to line 1 */}
         <div className="mb-8 space-y-2">
           <p className="font-display font-bold text-white text-lg md:text-2xl uppercase tracking-wider">
-            PROFESSIONAL TOWER CONSTRUCTION • MAINTENANCE
+            PROFESSIONAL TOWER CONSTRUCTION • MAINTENANCE • INSPECTIONS
           </p>
           <p className="font-display font-bold text-white text-lg md:text-2xl uppercase tracking-wider">
-            INSPECTIONS • EMERGENCY RESPONSE
+            EMERGENCY RESPONSE
           </p>
         </div>
 
@@ -56,13 +56,13 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll Indicator — nudge down slightly */}
+      {/* Scroll Indicator — smaller on mobile, tucked near bottom, clear of buttons */}
       <a
         href="#services"
-        className="absolute bottom-20 md:bottom-8 left-1/2 transform -translate-x-1/2 z-20 cursor-pointer hover:opacity-70 transition-opacity duration-200"
+        className="absolute bottom-6 md:bottom-8 left-1/2 transform -translate-x-1/2 z-20 cursor-pointer hover:opacity-70 transition-opacity duration-200"
         aria-label="Scroll to Services section"
       >
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5" aria-hidden="true">
+        <svg className="w-8 h-8 md:w-12 md:h-12" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5" aria-hidden="true">
           <path d="M12 5v14M5 12l7 7 7-7" />
         </svg>
       </a>
