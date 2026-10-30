@@ -33,7 +33,7 @@ const services: Service[] = [
   {
     title: 'EMERGENCY RESPONSE',
     description: '24/7 rapid deployment crews for storm damage and emergency restoration.',
-    image: '/images/emergency.jpg',
+    image: 'emergency.jpg',
     icon: <AlertTriangle className="w-6 h-6" />,
   },
   {
@@ -59,7 +59,7 @@ export default function ServicesGrid() {
         <p className="text-red-500 font-display font-bold text-lg uppercase tracking-widest text-center mb-3">
           WHAT WE DO
         </p>
-        <h2 className="font-display font-bold text-white text-3xl md:text-5xl uppercase tracking-widest text-center mb-14">
+        <h2 className="font-display font-bold text-white text-3xl md:text-5xl uppercase tracking-widest text-center mb-10">
           COMPLETE TOWER SOLUTIONS
         </h2>
 

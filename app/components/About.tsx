@@ -66,7 +66,7 @@ export default function About() {
               <img
                 src={aboutPhotos[i].image}
                 alt={aboutPhotos[i].alt}
-                className="w-full h-56 sm:h-64 object-cover"
+                className="w-full aspect-[4/3] object-cover"
                 loading="lazy"
               />
             </figure>
@@ -80,7 +80,7 @@ export default function About() {
               <img
                 src={aboutPhotos[i].image}
                 alt={aboutPhotos[i].alt}
-                className="w-full h-[26rem] md:h-[32rem] object-cover"
+                className="w-full aspect-[2/3] object-cover"
                 loading="lazy"
               />
             </figure>

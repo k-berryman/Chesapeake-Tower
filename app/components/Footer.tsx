@@ -11,12 +11,12 @@ export default function Footer() {
           Request a Quote
         </h2>
 
-        <p className="text-white/70 font-body mb-2">
+        <p className="text-white/70 font-body text-base mb-2">
           Rope Access and Communication Solutions for The Bay and Beyond.
         </p>
 
-        {/* Contact Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+        {/* Contact Buttons — more space above, less below */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10 mb-6">
           <a
             href="tel:+18035547891"
             className="inline-block cursor-pointer bg-red-600 hover:bg-red-700 text-white font-display font-bold text-lg md:text-xl uppercase tracking-widest py-3 px-8 rounded transition-transform duration-200 hover:scale-105 origin-center will-change-transform"
@@ -42,7 +42,7 @@ export default function Footer() {
             <input id="name" name="name" type="text" required className="w-full bg-neutral-900 border border-white/20 rounded px-3 py-2 text-white font-body focus:outline-none focus:border-red-500" />
         </div>
         <div>
-            <label htmlFor="email" className="block text-white/70 font-body text-sm mb-1">Email</label>
+            <label htmlFor="email" name="email" className="block text-white/70 font-body text-sm mb-1">Email</label>
             <input id="email" name="email" type="email" required className="w-full bg-neutral-900 border border-white/20 rounded px-3 py-2 text-white font-body focus:outline-none focus:border-red-500" />
         </div>
         <div>
@@ -65,7 +65,8 @@ export default function Footer() {
           <p className="text-white/30 font-body text-xs mb-4">
             Rope Access and Communication Solutions for The Bay and Beyond.
           </p>
-          <div className="mt-16 flex justify-center">
+          {/* Phone pill — shifted up */}
+          <div className="mt-8 flex justify-center">
             <a
               href="tel:+18035547891"
               className="inline-block bg-red-600 text-white font-body text-sm tracking-widest px-6 py-2 rounded-full border border-white/20"
