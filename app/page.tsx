@@ -1,3 +1,5 @@
+// page.tsx
+
 import Hero from './components/Hero'
 import Navigation from './components/Navigation'
 import ServicesGrid from './components/ServicesGrid'
