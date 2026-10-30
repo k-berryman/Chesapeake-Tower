@@ -20,23 +20,23 @@ export default function Hero() {
         role="presentation"
       />
 
-      {/* Main Content — mobile content pulled up */}
-      <div className="relative z-20 flex flex-col items-center justify-center h-full px-6 pb-20 md:pb-16 text-center">
+      {/* Main Content — mobile pulled up further for bottom breathing room */}
+      <div className="relative z-20 flex flex-col items-center justify-center h-full px-6 pb-32 md:pb-16 text-center">
 
-        {/* Tagline — mobile moved up, desktop untouched */}
-        <h2 className="font-display font-bold text-white text-3xl md:text-4xl lg:text-5xl tracking-widest leading-none mb-8 md:mb-4 mt-52 md:mt-[26rem]">
+        {/* Tagline */}
+        <h2 className="font-display font-bold text-white text-3xl md:text-4xl lg:text-5xl tracking-widest leading-none mb-8 md:mb-4 mt-48 md:mt-[26rem]">
           ELEVATING COMMUNICATIONS.
           <span className="block">DELIVERING EXCELLENCE.</span>
         </h2>
 
-        {/* Services List — mobile: tighter lines, less gap to buttons */}
+        {/* Services List */}
         <p className="font-display font-bold text-white text-base sm:text-lg md:text-2xl uppercase tracking-wider leading-normal md:leading-tight mb-6 md:mb-5 text-center">
           <span className="block">PROFESSIONAL TOWER CONSTRUCTION</span>
           <span className="block">MAINTENANCE • INSPECTIONS</span>
           <span className="block">EMERGENCY RESPONSE</span>
         </p>
 
-        {/* Buttons — mobile gap slightly reduced */}
+        {/* Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-2 md:gap-7">
           <a
             href="#contact"
@@ -53,7 +53,7 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll Indicator — mobile only, sits in the newly freed bottom space */}
+      {/* Scroll Indicator — mobile only */}
       <a
         href="#services"
         className="absolute bottom-20 left-1/2 transform -translate-x-1/2 z-20 cursor-pointer hover:opacity-70 transition-opacity duration-200 md:hidden"
