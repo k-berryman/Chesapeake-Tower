@@ -21,16 +21,16 @@ export default function Hero() {
       />
 
       {/* Main Content */}
-      <div className="relative z-20 flex flex-col items-center justify-center h-full px-6 pb-32 md:pb-40 text-center">
+      <div className="relative z-20 flex flex-col items-center justify-center h-full px-6 pb-32 md:pb-16 text-center">
 
-        {/* Tagline — pushed down substantially */}
-        <h2 className="font-display font-bold text-white text-3xl md:text-4xl lg:text-5xl tracking-widest leading-none mb-8 mt-64 md:mt-88">
+        {/* Tagline — desktop pushed down, mobile untouched */}
+        <h2 className="font-display font-bold text-white text-3xl md:text-4xl lg:text-5xl tracking-widest leading-none mb-8 mt-64 md:mt-[26rem]">
           ELEVATING COMMUNICATIONS.
           <span className="block">DELIVERING EXCELLENCE.</span>
         </h2>
 
-        {/* Services List — single paragraph so all lines share identical spacing */}
-        <p className="font-display font-bold text-white text-base sm:text-lg md:text-2xl uppercase tracking-wider leading-loose mb-10 text-center">
+        {/* Services List — mobile leading-loose kept, desktop tightened a lot */}
+        <p className="font-display font-bold text-white text-base sm:text-lg md:text-2xl uppercase tracking-wider leading-loose md:leading-normal mb-10 text-center">
           <span className="block">PROFESSIONAL TOWER CONSTRUCTION</span>
           <span className="block">MAINTENANCE • INSPECTIONS</span>
           <span className="block">EMERGENCY RESPONSE</span>
@@ -53,10 +53,10 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
+      {/* Scroll Indicator — raised to clear the audio bar */}
       <a
         href="#services"
-        className="absolute bottom-8 md:bottom-10 left-1/2 transform -translate-x-1/2 z-20 cursor-pointer hover:opacity-70 transition-opacity duration-200"
+        className="absolute bottom-20 md:bottom-24 left-1/2 transform -translate-x-1/2 z-20 cursor-pointer hover:opacity-70 transition-opacity duration-200"
         aria-label="Scroll to Services section"
       >
         <svg className="w-8 h-8 md:w-12 md:h-12" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5" aria-hidden="true">

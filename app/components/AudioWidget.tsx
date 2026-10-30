@@ -39,7 +39,7 @@ export default function AudioWidget() {
         <button
           onClick={toggle}
           aria-label={playing ? 'Pause music' : 'Play music'}
-          className="flex items-center justify-center w-9 h-9 rounded-full bg-red-600 text-white text-sm font-bold shrink-0 hover:bg-red-700 transition-colors"
+          className="flex items-center justify-center w-9 h-9 cursor-pointer rounded-full bg-red-600 text-white text-sm font-bold shrink-0 hover:bg-red-700 transition-colors"
         >
           {playing ? '❚❚' : '▶'}
         </button>

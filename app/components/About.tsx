@@ -80,7 +80,7 @@ export default function About() {
               <img
                 src={aboutPhotos[i].image}
                 alt={aboutPhotos[i].alt}
-                className="w-full h-80 md:h-[32rem] object-cover"
+                className="w-full h-[26rem] md:h-[32rem] object-cover"
                 loading="lazy"
               />
             </figure>
