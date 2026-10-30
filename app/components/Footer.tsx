@@ -42,7 +42,7 @@ export default function Footer() {
             <input id="name" name="name" type="text" required className="w-full bg-neutral-900 border border-white/20 rounded px-3 py-2 text-white font-body focus:outline-none focus:border-red-500" />
         </div>
         <div>
-            <label htmlFor="email" name="email" className="block text-white/70 font-body text-sm mb-1">Email</label>
+            <label htmlFor="email" className="block text-white/70 font-body text-sm mb-1">Email</label>
             <input id="email" name="email" type="email" required className="w-full bg-neutral-900 border border-white/20 rounded px-3 py-2 text-white font-body focus:outline-none focus:border-red-500" />
         </div>
         <div>
