@@ -10,7 +10,7 @@ const features = [
 
 export default function WhyChooseUs() {
   return (
-    <section id="safety" className="bg-neutral-950 py-20 px-6">
+    <section id="safety" className="bg-neutral-950 py-20 md:pt-32 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div>
           <p className="text-red-500 font-display font-bold text-base uppercase tracking-widest mb-2">Built on Experience. Driven by Safety.</p>

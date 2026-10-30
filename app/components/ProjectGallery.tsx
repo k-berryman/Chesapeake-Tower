@@ -1,5 +1,5 @@
 const projects = [
-  { image: '/images/projects-1.png', label: 'Tower Construction' },
+  { image: '/images/projects-1.jpg', label: 'Tower Construction' },
   { image: '/images/projects-2.jpeg', label: 'Antenna Installation' },
   { image: '/images/projects-3.png', label: 'Multi-Site Complex' },
   { image: '/images/projects-4.jpeg', label: 'Microwave & Satellite Systems' },
@@ -9,7 +9,7 @@ const projects = [
 
 export default function ProjectGallery() {
   return (
-    <section id="projects" className="bg-black py-20 px-6">
+    <section id="projects" className="bg-black py-20 md:pt-32 px-6">
       <div className="max-w-7xl mx-auto">
         <p className="text-red-500 font-display font-bold text-base uppercase tracking-widest text-center mb-2">Featured Projects</p>
         <h2 className="font-display font-bold text-white text-3xl md:text-5xl uppercase tracking-widest text-center mb-14">Proven Performance</h2>

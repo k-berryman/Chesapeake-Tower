@@ -24,7 +24,7 @@ const aboutPhotos = [
 
 export default function About() {
   return (
-    <section id="about" className="bg-neutral-950 py-20 px-6">
+    <section id="about" className="bg-neutral-950 py-20 md:pt-32 px-6">
       <div className="max-w-7xl mx-auto">
 
         {/* Section Header */}
@@ -59,13 +59,13 @@ export default function About() {
           ))}
         </div>
 
-        {/* Photos 1 & 2 — landscape pair */}
+        {/* Row 1 — landscape pair (photos 1 & 3) */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-          {aboutPhotos.slice(0, 2).map((photo) => (
-            <figure key={photo.image} className="border border-white/10 overflow-hidden">
+          {[0, 2].map((i) => (
+            <figure key={aboutPhotos[i].image} className="border border-white/10 overflow-hidden">
               <img
-                src={photo.image}
-                alt={photo.alt}
+                src={aboutPhotos[i].image}
+                alt={aboutPhotos[i].alt}
                 className="w-full h-56 sm:h-64 object-cover"
                 loading="lazy"
               />
@@ -73,27 +73,19 @@ export default function About() {
           ))}
         </div>
 
-        {/* Photo 3 — portrait, own row */}
-        <figure className="mx-auto max-w-sm mb-4 border border-white/10 overflow-hidden">
-          <img
-            src={aboutPhotos[2].image}
-            alt={aboutPhotos[2].alt}
-            className="w-full aspect-[3/4] object-cover"
-            loading="lazy"
-          />
-        </figure>
-
-        {/* Photo 4 — portrait, own row */}
-        <figure className="mx-auto max-w-sm mb-20 border border-white/10 overflow-hidden">
-<figure className="mb-20 border border-white/10 overflow-hidden">
-            <img
-              src={aboutPhotos[3].image}
-              alt={aboutPhotos[3].alt}
-              className="w-full object-contain"
-              loading="lazy"
-            />
-          </figure>
-        </figure>
+        {/* Row 2 — portrait pair (photos 2 & 4), side by side on desktop */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-20">
+          {[1, 3].map((i) => (
+            <figure key={aboutPhotos[i].image} className="border border-white/10 overflow-hidden">
+              <img
+                src={aboutPhotos[i].image}
+                alt={aboutPhotos[i].alt}
+                className="w-full h-80 md:h-[32rem] object-cover"
+                loading="lazy"
+              />
+            </figure>
+          ))}
+        </div>
 
         {/* Memorial */}
         <div className="max-w-3xl mx-auto text-center border-t border-white/10 pt-16">

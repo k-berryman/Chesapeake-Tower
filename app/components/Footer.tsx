@@ -62,7 +62,7 @@ export default function Footer() {
           <p className="text-white/70 font-body text-lg md:text-xl font-semibold mb-2">
             Chesapeake Tower Solutions
           </p>
-          <p className="text-white/30 font-body text-xs">
+          <p className="text-white/30 font-body text-xs mb-4">
             Rope Access and Communication Solutions for The Bay and Beyond.
           </p>
           <div className="mt-16 flex justify-center">
