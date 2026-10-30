@@ -6,6 +6,7 @@ import ProjectGallery from './components/ProjectGallery'
 import About from './components/About'
 import CareerBanner from './components/CareerBanner'
 import Footer from './components/Footer'
+import AudioWidget from './components/AudioWidget'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <About />
       <CareerBanner />
       <Footer />
+      <AudioWidget />
     </main>
   )
 }
