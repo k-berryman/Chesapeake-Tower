@@ -10,12 +10,11 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 88px; /* clears the fixed nav when jumping to sections */
+  scroll-padding-top: 96px; /* clears the fixed nav when jumping to sections */
 }
 
 body {
   background: #0a0a0a;
   color: #ededed;
   font-family: var(--font-inter), Arial, Helvetica, sans-serif;
-  padding-bottom: 64px; /* clears the fixed AudioWidget bar at the bottom */
 }

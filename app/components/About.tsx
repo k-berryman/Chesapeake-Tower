@@ -17,8 +17,8 @@ const aboutBlurbs = [
 
 const aboutPhotos = [
   { image: '/images/About-1.png', alt: 'Chesapeake Tower Solutions field work' },
-  { image: '/images/About-2.png', alt: 'CTS crew on site' },
   { image: '/images/About-3.jpeg', alt: 'Tower infrastructure project' },
+  { image: '/images/About-2.png', alt: 'CTS crew on site' },
   { image: '/images/About-4.jpeg', alt: 'CTS tower project' },
 ];
 
