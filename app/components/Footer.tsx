@@ -53,7 +53,7 @@ export default function Footer() {
         </form>
 
         {/* Bottom Bar */}
-        <div className="border-t border-white/10 pt-8">
+        <div className="border-t border-white/10 mt-16 pt-8">
           <img
             src="/images/favicon.svg"
             alt="Chesapeake Tower Solutions"
