@@ -24,13 +24,13 @@ export default function Hero() {
       <div className="relative z-20 flex flex-col items-center justify-center h-full px-6 pb-32 md:pb-16 text-center">
 
         {/* Tagline — mobile shifted down slightly */}
-        <h2 className="font-display font-bold text-white text-3xl md:text-4xl lg:text-5xl tracking-widest leading-none mb-8 md:mb-4 mt-56 md:mt-[26rem]">
+        <h2 className="font-display font-bold text-white text-3xl md:text-4xl lg:text-5xl tracking-widest leading-none mb-8 md:mb-4 mt-56 md:mt-[25.5rem]">
           ELEVATING COMMUNICATIONS.
           <span className="block">DELIVERING EXCELLENCE.</span>
         </h2>
 
         {/* Services List */}
-        <p className="font-display font-bold text-white text-base sm:text-lg md:text-2xl uppercase tracking-wider leading-normal md:leading-tight mb-6 md:mb-5 text-center">
+        <p className="font-display font-bold text-white text-base sm:text-lg md:text-2xl uppercase tracking-wider leading-normal md:leading-tight mb-6 md:mb-5 text-center -mt-2 md:mt-0">
           <span className="block">PROFESSIONAL TOWER CONSTRUCTION</span>
           <span className="block">MAINTENANCE • INSPECTIONS</span>
           <span className="block">EMERGENCY RESPONSE</span>
