@@ -32,10 +32,9 @@ export default function Footer() {
         </div>
 
         <form
-        action="mailto:dbeaumont@chesapeaketower.com"
-        method="post"
-        encType="text/plain"
-        className="max-w-md mx-auto text-left space-y-4"
+          action="https://formspree.io/f/xoeeprdj"
+          method="POST"
+          className="max-w-md mx-auto text-left space-y-4"
         >
         <div>
             <label htmlFor="name" className="block text-white/70 font-body text-sm mb-1">Name</label>
@@ -49,6 +48,8 @@ export default function Footer() {
             <label htmlFor="message" className="block text-white/70 font-body text-sm mb-1">Message</label>
             <textarea id="message" name="message" rows={4} required className="w-full bg-neutral-900 border border-white/20 rounded px-3 py-2 text-white font-body focus:outline-none focus:border-red-500"></textarea>
         </div>
+        {/* Hidden fields for better control */}
+        <input type="hidden" name="_subject" value="New contact form submission" />
         <button type="submit" className="w-full cursor-pointer bg-red-600 hover:bg-red-700 text-white font-display font-bold text-lg uppercase tracking-widest py-3 rounded transition-transform duration-200 hover:scale-105 origin-center will-change-transform">Send Message</button>
         </form>
 

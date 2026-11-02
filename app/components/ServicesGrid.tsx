@@ -33,7 +33,7 @@ const services: Service[] = [
   {
     title: 'EMERGENCY RESPONSE',
     description: '24/7 rapid deployment crews for storm damage and emergency restoration.',
-    image: 'emergency.jpg',
+    image: '/images/emergency.jpg',
     icon: <AlertTriangle className="w-6 h-6" />,
   },
   {
