@@ -21,7 +21,7 @@ export default function Hero() {
       />
 
       {/* Main Content */}
-      <div className="relative z-20 flex flex-col items-center justify-center h-full px-6 pb-32 md:pb-16 text-center">
+      <div className="relative z-20 flex flex-col items-center justify-center h-full px-6 pb-32 md:pb-24 text-center">
 
         {/* Tagline — mobile shifted down slightly */}
         <h2 className="font-display font-bold text-white text-3xl md:text-4xl lg:text-5xl tracking-widest leading-none mb-8 md:mb-4 mt-56 md:mt-[25.5rem]">
