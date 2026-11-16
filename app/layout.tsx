@@ -1,10 +1,11 @@
 import type { Metadata } from 'next'
 import { Barlow_Condensed, Inter } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 const barlow = Barlow_Condensed({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
+  weight: ['400', '500', '600', '700', '800'],
   variable: '--font-barlow',
 })
 
@@ -14,19 +15,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.chesapeaketower.com'),
   title: 'Chesapeake Tower Solutions',
-  description: 'Rope access and communication solutions for The Bay and Beyond. Tower construction, maintenance, FAA-compliant inspections, and 24/7 emergency response.',
-  keywords: [
-    'tower construction',
-    'tower maintenance',
-    'tower inspections',
-    'rope access',
-    'emergency response',
-    'telecommunications',
-    'Chesapeake Bay',
-    'Virginia',
-  ],
+  description: 'Rope access and communication solutions for The Bay and Beyond.',
+  metadataBase: new URL('https://www.chesapeaketower.com'),
   openGraph: {
     title: 'Chesapeake Tower Solutions',
     description: 'Rope access and communication solutions for The Bay and Beyond.',
@@ -55,6 +46,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${barlow.variable} ${inter.variable}`}>
       <body className="font-body bg-primary text-white antialiased">
         {children}
+        <Analytics />
       </body>
     </html>
   )
