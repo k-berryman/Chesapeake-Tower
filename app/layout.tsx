@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Barlow_Condensed, Inter } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/next'
+import Script from 'next/script'
 import './globals.css'
 
 const barlow = Barlow_Condensed({
@@ -44,9 +44,16 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${barlow.variable} ${inter.variable}`}>
+      <head>
+        {/* Plausible Analytics script */}
+        <Script
+          defer
+          data-domain="chesapeaketower.com"
+          src="https://plausible.io/js/script.js"
+        />
+      </head>
       <body className="font-body bg-primary text-white antialiased">
         {children}
-        <Analytics />
       </body>
     </html>
   )
