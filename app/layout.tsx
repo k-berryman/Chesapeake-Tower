@@ -45,11 +45,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${barlow.variable} ${inter.variable}`}>
       <head>
-        {/* Plausible Analytics script */}
+        {/* Cloudflare Web Analytics */}
         <Script
-          defer
-          data-domain="chesapeaketower.com"
-          src="https://plausible.io/js/script.js"
+          type="module"
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "3dec4b2c09734b6fa50ce4f3378abbef"}'
         />
       </head>
       <body className="font-body bg-primary text-white antialiased">
